@@ -1,0 +1,14 @@
+<h1>Iniciar sesión</h1>
+<form novalidate [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field>
+        <input matInput placeholder="Correo" formControlName="email" type="email" id="email1">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Contraseña" formControlName="password" type="password" id="password1">
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="accent">Iniciar Sesión</button>
+
+</form>

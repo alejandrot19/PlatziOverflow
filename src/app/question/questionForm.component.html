@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit(formulario)" #formulario="ngForm">
+<!-- <form action=""> -->
+    <mat-form-field>
+        <input matInput placeholder="Título" name="title" ngModel>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Descripción" name="description" ngModel>
+    </mat-form-field>
+
+    <mat-grid-list cols="3" rowHeight="3:2">
+        <mat-grid-tile *ngFor="let icon of icons">
+            <i mat-list-icon class=""></i>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+    <button type="submit" mat-raised-button color="accent">Responder</button>
+
+</form>

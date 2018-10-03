@@ -1,0 +1,23 @@
+<h1>Registrase</h1>
+
+<form novalidate [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+    
+    <mat-form-field>
+        <input matInput placeholder="Nombre" formControlName="nombre" type="text" id="nombre">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Apellido" formControlName="apellido" type="text" id="apellido">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Correo" formControlName="email" type="email" id="email">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Contraseña" formControlName="password" type="password" id="password">
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="accent">Registrarse</button>
+
+</form>
